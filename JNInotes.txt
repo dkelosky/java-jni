@@ -1,0 +1,72 @@
+--------------------------------------------------
+Gotchas:
+
+--------------------------------------------------
++export -p shows all PATH variables
++to export permanently use export command inside of:
+	~/.profile
+	~/.bash_profile
+	/etc/profile
+
+--------------------------------------------------
+Use JDK/JVM matching arch level of machine 
+(i.e. 32 or 64-bit must match gcc compilations if
+using JNI)
+
+Notes on JDK installation:
+
+download jdk...tar.gz
+cd to usr/local
+sudo -s >>> to signn on
+tar zxvf /home/dan/Downloads/jdk...
+exit >> exit root user
+
+add to ~/.profile
+export JAVA_HOME=/usr/local/jdk...
+export PATH=$PATH:$JAVA_HOME/bin
+
+
+actually im using ~/.bashrc
+--------------------------------------------------
+Add C header library for JNI files for gcc through
+environment variable examples:
+
+C_INCLUDE_PATH=/usr/local/jdk1.8.0_31/include
+export C_INCLUDE_PATH
+
+C_INCLUDE_PATH=/usr/local/jdk1.8.0_31/include/linux
+export C_INCLUDE_PATH
+
+Use this one 31 for 64 bit or change 31 below to 25 for 32 bit:
+C_INCLUDE_PATH=$C_INCLUDE_PATH:/usr/local/jdk1.8.0_31/include:/usr/local/jdk1.8.0_31/include/linux
+
+Or this one specifing variable differently:
+C_INCLUDE_PATH=${C_INCLUDE_PATH}:/usr/local/jdk1.8.0_31/include:/usr/local/jdk1.8.0_31/include/linux
+
+This one includes current directory which is not needed:
+C_INCLUDE_PATH=/usr/local/jdk1.8.0_31/include:/usr/local/jdk1.8.0_31/include/linux:./
+
+//add path variable
+export C_INCLUDE_PATH
+
+//display
+echo $C_INCLUDE_PATH
+
+--------------------------------------------------
+-> make java class 
+
+->dont forget C_INCLUDE_PATH
+-> generate c header for dll / shared object
+-> generate c source using header
+-> created dll / shared object
+-> invoke java code
+
+javac HelloWorld.java ---> generate HelloWorld.java
+javah -jni HelloWorld ---> generate HelloWorld.h
+
+-> shared object 
+
+LD_LIBRARY_PATH=./  ---> set current directory 
+export LD_LIBRARY_PATH
+java HelloWorld
+
