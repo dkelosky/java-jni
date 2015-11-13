@@ -14,7 +14,7 @@
 
 4. issue "javac HelloWorld.java" to compile the Java source
 
-5. issue "javah -jni HelloWorld" to generate a HelloWorld.h C header file (see [**Note1**][Misc Notes] )
+5. issue "javah -jni HelloWorld" to generate a HelloWorld.h C header file (see [**Note1**](#misc-notes) )
 
 6. create the HelloWorld.c source including <jni.h> and "HelloWorld.h" C header files in addition to required C runtime library headers (see **Note1** )
 
