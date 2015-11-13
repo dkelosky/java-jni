@@ -23,7 +23,7 @@ This is a very simple "Hello World" example of how to use Java Native Interface 
 
 7. edit the make file so that the include paths contain the location of the generated HelloWorld.h C header file, your_JDK_install_path/include, and your_JDK_install_path/include/linux (see [**Note2**](#misc-notes) and [**Makefile**](#misc-notes))
 
-8. issue "make" to generate the libHelloWorld.so (so = Shared Object and is like a Windows DLL)
+8. issue "make" to generate the libHelloWorld.so (so = Shared Object which is like a Windows DLL)
 
 9. set the LD_LIBRARY_PATH variable to the libHelloWorld.so directory and export so that the JVM can locate the shared object
   * (e.g. "LD_LIBRARY_PATH=./" to set to the current directory and then "export LD_LIBRARY_PATH"
