@@ -39,6 +39,6 @@ This is a very simple "Hello World" example of how to use Java Native Interface 
 * **Note1** 
   * these steps are optional since the HelloWorld.h and HelloWorld.c source are contained in this sample.
 * **Note2** 
-  * you could alternatively use the C_INCLUDE_PATH variable to specifiy JDK or other C include heads instead of using the "gcc -I" include options
+  * you could alternatively use the C_INCLUDE_PATH variable to specifiy JDK or other C include headers instead of using the "gcc -I" include options
 * **Makefile** 
   * the makefile uses -Wall to turn on most warnings and -Werror to make warnings errors (and fail the compilation)
