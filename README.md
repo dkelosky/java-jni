@@ -6,7 +6,7 @@ To run this sample ...
 
 1. change directories (cd) to a development directory
 
-2. issue "git clone https://github.com/dkelosky/java-jni.git
+2. issue "git clone https://github.com/dkelosky/java-jni.git"
 
 3. issue "cd java-jni" to change to the java-jni directory
 
