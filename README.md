@@ -7,7 +7,6 @@ To run this sample:
 2. issue "git clone https://github.com/dkelosky/java-jni.git
 3. issue "cd java-jni" to change to the java-jni directory
 4. issue "javac HelloWorld.java" to compile the Java source
-5. 
 
 
 5*. issue "javah -jni HelloWorld" to generate a HelloWorld.h C header file
