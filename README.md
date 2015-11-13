@@ -19,7 +19,7 @@ This is a very simple "Hello World" example of how to use Java Native Interface 
 
 5. issue "javah -jni HelloWorld" to generate a HelloWorld.h C header file (see [**Note1**](#misc-notes) )
 
-6. create the HelloWorld.c source including <jni.h> and "HelloWorld.h" C header files in addition to required C runtime library headers (see [**Note1**](#misc-notes) )
+6. create the HelloWorld.c source including the jni.h and HelloWorld.h C header files in addition to required C runtime library headers (see [**Note1**](#misc-notes) )
 
 7. edit the make file so that the include paths contain the location of the generated HelloWorld.h C header file, your_JDK_install_path/include, and your_JDK_install_path/include/linux (see [**Note2**](#misc-notes) and [**Makefile**](#misc-notes))
 
