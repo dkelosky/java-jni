@@ -25,7 +25,7 @@ This is a very simple "Hello World" example of how to use Java Native Interface 
 
 8. issue "make" to generate the libHelloWorld.so (so = Shared Object and is like a Windows DLL)
 
-9. set the LD_LIBRARY_PATH variable to the libHelloWorld.so directory and export 
+9. set the LD_LIBRARY_PATH variable to the libHelloWorld.so directory and export so that the JVM can locate the shared object
   * (e.g. "LD_LIBRARY_PATH=./" to set to the current directory and then "export LD_LIBRARY_PATH"
 
 10. issue "java HelloWorld" to see the "Hello world" text which is written by a C shared object called from Java
