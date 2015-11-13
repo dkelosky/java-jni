@@ -25,6 +25,8 @@
 9. set the LD_LIBRARY_PATH variable to the libHelloWorld.so directory and export 
   * (e.g. "LD_LIBRARY_PATH=./" to set to the current directory and then "export LD_LIBRARY_PATH"
 
+10. issue "java HelloWorld" to see the "Hello world" text which is written by a C shared object called from Java
+
 ---
 
 #### Misc Notes
