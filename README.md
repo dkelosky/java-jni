@@ -2,7 +2,7 @@
 
 Prerequisites are JDK and Git.
 
-To run this sample
+To run this sample -
 
 1. change directories (cd) to a development directory
 2. issue "git clone https://github.com/dkelosky/java-jni.git
