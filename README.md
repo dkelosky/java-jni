@@ -15,5 +15,5 @@ To run this sample ...
 9. set the LD_LIBRARY_PATH variable to the libHelloWorld.so directory and export 
   (e.g. "LD_LIBRARY_PATH=./" to set to the current directory and then "export LD_LIBRARY_PATH"
 
-**Note1** these steps are optional since the HelloWorld.h and HelloWorld.c source are contained in this sample.
-**Note2**
+* **Note1** these steps are optional since the HelloWorld.h and HelloWorld.c source are contained in this sample.
+* **Note2** You could alternatively use the C_INCLUDE_PATH variable to specifiy JDK or other C include heads instead of using the "gcc -I" include options
