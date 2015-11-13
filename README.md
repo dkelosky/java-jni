@@ -1,8 +1,10 @@
 # java-jni (Linux only)
 
-Prerequisites are JDK and Git.
+### Prerequisites 
+* JDK 
+* Git
 
-To run this sample ...
+### To compile and run this sample 
 
 1. change directories (cd) to a development directory
 
@@ -16,7 +18,7 @@ To run this sample ...
 
 6. create the HelloWorld.c source including <jni.h> and "HelloWorld.h" C header files in addition to required C runtime library headers (see **Note1** )
 
-7. edit make file so that the include paths contain the location of the generated HelloWorld.h C header file, your_JDK_install_path/include, and your_JDK_install_path/include/linux (see **Note2** and **Makefile**)
+7. edit the make file so that the include paths contain the location of the generated HelloWorld.h C header file, your_JDK_install_path/include, and your_JDK_install_path/include/linux (see **Note2** and **Makefile**)
 
 8. issue "make" to generate the libHelloWorld.so (so = Shared Object and is like a Windows DLL)
 
@@ -24,6 +26,8 @@ To run this sample ...
   * (e.g. "LD_LIBRARY_PATH=./" to set to the current directory and then "export LD_LIBRARY_PATH"
 
 ---
+
+#### Misc Notes
 
 * **Note1** 
   * these steps are optional since the HelloWorld.h and HelloWorld.c source are contained in this sample.
