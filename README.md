@@ -1,7 +1,7 @@
 # java-jni
 
 ### Overview 
-This is a very simple "Hello World" example of how to use Java Native Interface (JNI) to call a C function from Java.  This is a Linux-only example.
+This is a very simple "Hello World" example of how to use Java Native Interface (JNI) to call a C function from Java.
 
 ### Prerequisites 
 * JDK 
