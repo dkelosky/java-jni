@@ -38,11 +38,11 @@ This is a very simple "Hello World" example of how to use Java Native Interface 
 - cd java-jni
 - javac HelloWorld.java
 - javah -jni HelloWorld
-- # create jni dynamic library for mac osx
+- create jni dynamic library for mac osx
 - g++ "-I/System/Library/Frameworks/JavaVM.framework/Versions/Current/Headers" -x c -c HelloWorld.c
 - g++ -dynamiclib -o libHelloWorld.jnilib HelloWorld.o
-- # you will see a libHelloWorld.jnilib in current dir
-- # excute HelloWolrd.class and get C print result `Hello world!` 
+- you will see a libHelloWorld.jnilib in current dir
+- excute HelloWolrd.class and get C print result `Hello world!` 
 - java HelloWorld
 
 #### Misc Notes
