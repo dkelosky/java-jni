@@ -1,13 +1,13 @@
-# java-jni (Linux only)
+# java-jni
 
 ### Overview 
-This is a very simple "Hello World" example of how to use Java Native Interface (JNI) to call a C function from Java.  This is a Linux-only example.
+This is a very simple "Hello World" example of how to use Java Native Interface (JNI) to call a C function from Java.
 
 ### Prerequisites 
 * JDK 
 * Git
 
-### To compile and run this sample 
+### To compile and run this sample in linux
 
 1. change directories (cd) to a development directory
 
@@ -31,6 +31,19 @@ This is a very simple "Hello World" example of how to use Java Native Interface 
 10. issue "java HelloWorld" to see the "Hello world" text which is written by a C shared object called from Java
 
 ---
+
+### To compile and run this sample in mac osx
+
+- git clone https://github.com/dkelosky/java-jni.git
+- cd java-jni
+- javac HelloWorld.java
+- javah -jni HelloWorld
+- create jni dynamic library for mac osx
+- g++ "-I/System/Library/Frameworks/JavaVM.framework/Versions/Current/Headers" -x c -c HelloWorld.c
+- g++ -dynamiclib -o libHelloWorld.jnilib HelloWorld.o
+- you will see a libHelloWorld.jnilib in current dir
+- excute HelloWolrd.class and get C print result `Hello world!` 
+- java HelloWorld
 
 #### Misc Notes
 
